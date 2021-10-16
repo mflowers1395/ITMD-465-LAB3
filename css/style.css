@@ -36,4 +36,11 @@ body {
   background-color: white;
 }
 
+function logReset(event) {
+  log.textContent = `Form Cleared`;
+}
+const form = document.getElementById('form');
+const log = document.getElementById('log');
+form.addEventListener('reset', logReset);
+
 
