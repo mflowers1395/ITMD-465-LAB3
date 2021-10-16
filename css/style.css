@@ -23,6 +23,15 @@ p {
   margin: auto;
 }
 
+.div2{
+  width: 1000px;
+  height: 150px;
+  border: 1px solid black;
+  background: #796E65;
+  text-align: center;
+  margin: auto;
+}
+
 body {
   background-color: #d85a7b;
 }
