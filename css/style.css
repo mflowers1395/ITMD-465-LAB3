@@ -13,13 +13,6 @@ p {
   text-align: center;
 }
 
-h1 {
-  text-align: center;
-}
-
-h2 {
-  text-align: center;
-}
 
 .div1 {
   width: 700px;
@@ -27,6 +20,7 @@ h2 {
   border: 1px solid blue;
   background: yellow;
   text-align: center;
+  margin: auto;
 }
 
 
