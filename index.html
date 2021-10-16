@@ -52,6 +52,12 @@
   <p> &reg; 2021 Marilyn Flowers | mflowers1@hawk.iit.edu </p>
  
 <script>
+ function logReset(event) {
+  log.textContent = `Form Cleared`;
+}
+const form = document.getElementById('form');
+const log = document.getElementById('log');
+form.addEventListener('reset', logReset);
 </script>
 </body>
  
