@@ -61,6 +61,8 @@
             console.log('Calculator works!');
             let myNumber = document.getElementById('st').value.trim();
             let myNumber1 = document.getElementById('tr').value.trim();
+            let myNumber2 = document.getElementById('ts').value.trim();
+            let myNumber3 = document.getElementById('t').value.trim();
             console.log(myNumber);
 
             if (myNumber === '' || isNaN(Number(myNumber) & (myNumber1 === '' || isNaN(Number(myNumber1))) {
@@ -69,8 +71,8 @@
                 document.getElementById('tr').value = '';
              
             } else {
-                document.getElementById('t').value = myNumber * myNumber;
               document.getElementById('ts').value = myNumber * (myNumber1/100);
+              document.getElementById('t').value = myNumber2 + myNumber;
             }
         }
    
