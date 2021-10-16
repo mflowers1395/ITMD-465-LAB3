@@ -55,26 +55,29 @@
        <div>
   <p> &reg; 2021 Marilyn Flowers | mflowers1@hawk.iit.edu </p>
  
-<script>
- function myTotal(){
-  let myTotal = document.getElementById('st').value.trim();
-  console.log(myTotal);
-  
-  if (myTotal === '' || isNaN(Number(myTotal))) {
-   alert('You Must Enter A Number!');
-   document.getElementById('st').value = '':
-  } else{
-   document.getElementById('st').value=myTotal * myTotal;
-  }
- }
+<script> 
+        // 3
+        function squareMyNumber(){
+            console.log('square my number works!');
+            let myNumber = document.getElementById('st').value.trim();
+            console.log(myNumber);
+
+            if (myNumber === '' || isNaN(Number(myNumber))) {
+                alert('You must enter a number to square!');
+                document.getElementById('st').value = '';
+            } else {
+                document.getElementById('t').value = myNumber * myNumber;
+            }
+        }
+ document.getElementById('calc').addEventListener('click', squareMyNumber);
+ document.getElementbyId('clearBtn').addEventListener('click', function(){
+  document.getElementById('st').value = '';
+  document.getElementById('tr').value = '';
+  document.getElementById('ts').value = '';
+  document.getElementById('t').value = '';
+        });
+    
  
- document.getElementById('calc').addEventListener('click', myTotal);
-document.getElementbyId('clearBtn').addEventListener('click', function(){
- document.getElementById('st').value = '';
- document.getElementById('tr').value = '';
- document.getElementById('ts').value = '';
- document.getElementById('t').value = '';
-});
 </script>
 </body>
  
