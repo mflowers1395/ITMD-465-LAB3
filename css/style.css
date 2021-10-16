@@ -18,7 +18,7 @@ p {
   width: 1000px;
   height: 150px;
   border: 1px solid black;
-  background: #796E65;
+  background: yellow;
   text-align: center;
   margin: auto;
 }
@@ -27,13 +27,13 @@ p {
   width: 1000px;
   height: 150px;
   border: 1px solid black;
-  background: #796E65;
+  background: yellow;
   text-align: center;
   margin: auto;
 }
 
 body {
-  background-color: #d85a7b;
+  background-color: white;
 }
 
 
