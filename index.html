@@ -68,13 +68,14 @@
                 document.getElementById('st').value = '';
              
             } else {
+             
+        document.getElementById('calc').addEventListener('click', squareMyNumber);
                 document.getElementById('t').value = myNumber * myNumber;
             }
         }
- }
+ 
       
 
-        document.getElementById('calc').addEventListener('click', squareMyNumber);
         document.getElementById('clearBtn').addEventListener('click', function(){
             document.getElementById('st').value = '';
                 document.getElementById('t').value = '';
