@@ -45,7 +45,7 @@
       <div>
         
   <button type="reset">Clear</button>
-  <button> Reset </button>
+ <input type = "button" value = "Reset data" onClick = "fun()"/>
                                       
 </form>
        <p id="log"></p>
@@ -60,6 +60,9 @@
 const form = document.getElementById('form');
 const log = document.getElementById('log');
 form.addEventListener('reset', logReset);
+ function fun(){
+   document.getElementById("form").reset();
+ } 
 </script>
 </body>
  
