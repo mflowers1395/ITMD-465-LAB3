@@ -56,6 +56,17 @@
   <p> &reg; 2021 Marilyn Flowers | mflowers1@hawk.iit.edu </p>
  
 <script>
+ function MyTotal(){
+  let myTotal = document.getElementById('st').value.trim();
+  console.log(myTotal);
+  
+  if (myTotal === '' || isNaN(Number(mytotal))) {
+   alert('You Must Enter A Number!');
+   document.getElementById('st').value = '':
+  }
+ }
+ 
+ //CLEAR BUTTON SECTION
 document.getElementbyId('clearBtn').addEventListener('click', function(){
  document.getElementById('st').value = '';
  document.getElementById('tr').value = '';
