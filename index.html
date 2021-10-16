@@ -60,15 +60,15 @@
   let myTotal = document.getElementById('st').value.trim();
   console.log(myTotal);
   
-  if (myTotal === '' || isNaN(Number(mytotal))) {
+  if (myTotal === '' || isNaN(Number(myTotal))) {
    alert('You Must Enter A Number!');
    document.getElementById('st').value = '':
+  } else{
+   document.getElementById('st').value=myTotal * myTotal;
   }
  }
  
  document.getElementById('calc').addEventListener('click', myTotal);
- 
- //CLEAR BUTTON SECTION
 document.getElementbyId('clearBtn').addEventListener('click', function(){
  document.getElementById('st').value = '';
  document.getElementById('tr').value = '';
