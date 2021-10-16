@@ -1,87 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
-<meta http-equiv='cache-control' content='no-cache'> 
-<meta http-equiv='expires' content='0'> 
-<meta http-equiv='pragma' content='no-cache'>
- 
-<head>
-<title>Sales Tax Calculator</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
- <link rel="stylesheet" href="css/style.css">
-</head>
- 
-<body>
- <div class="div1"> <h2> ITMD-4/565 Lab 1 - Marilyn Flowers - mflowers1@iit.edu </h2>
-  <h1> Sales Tax Calculator </h1>
-  </div>
- <p>
- </p>
-   <div class="div2">
-    <h4> Enter Subtotal and Tax Rate and click the Calculate button to show the sales tax amount and the total. 
-     Click the clear button to clear out all form fields. Tax rate should be a percentage but do not enter a % sign in the tax rate box. </h4>
- 
- <form id="form">
-  
-    <label> Subtotal: </label>
-        <input id="st" type="text"/>
-
+   <meta charset="UTF-8">
+   <meta http-equiv='cache-control' content='no-cache'>
+   <meta http-equiv='expires' content='0'>
+   <meta http-equiv='pragma' content='no-cache'>
+   <head>
+      <title>Sales Tax Calculator</title>
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+   <body>
+      <div class="div1">
+         <h2> ITMD-4/565 Lab 1 - Marilyn Flowers - mflowers1@iit.edu </h2>
+         <h1> Sales Tax Calculator </h1>
+      </div>
+      <p>
+      </p>
+      <div class="div2">
+      <h4> Enter Subtotal and Tax Rate and click the Calculate button to show the sales tax amount and the total. 
+         Click the clear button to clear out all form fields. Tax rate should be a percentage but do not enter a % sign in the tax rate box. 
+      </h4>
+      <form id="form">
+         <label> Subtotal: </label>
+         <input id="st" type="text"/>
+         <div>
+         <label>Tax Rate: </label>
+         <input id="tr" type="text" />
+         <div>
+         <label>Sales Tax: </label>
+         <input id="ts" type="text" disabled/>
+         <div>
+         <label>Total: </label>
+         <input id="t"type="text" disabled/>
+         <div>
+            <button id="calc">Calculate</button>     
+            <button id ="clearBtn">Clear</button>
+      </form>
+      <p id="log"></p>
+      </div>
       <div>
-       
-        <label>Tax Rate: </label>
-        <input id="tr" type="text" />
-     
-      <div>
-       
-        <label>Sales Tax: </label>
-        <input id="ts" type="text" disabled/>
-       
-      
-      <div>
-       
-        <label>Total: </label>
-        <input id="t"type="text" disabled/>
-       
-      <div>
-       
-   <button id="calc">Calculate</button>     
-   <button id ="clearBtn">Clear</button>
- 
-  
-                                      
-</form>
-       <p id="log"></p>
-     </div>
-       <div>
-  <p> &reg; 2021 Marilyn Flowers | mflowers1@hawk.iit.edu </p>
- 
-<script> 
-        // 3
-        function totalMyNumber(){
-            console.log('Calculator works!');
-            let myNumber = document.getElementById('st').value.trim();
-            let myNumber1 = document.getElementById('tr').value.trim();
-         
-            
-            console.log(myNumber);
-
-            if (myNumber === '' || isNaN(Number(myNumber))) {
-                alert('You Must Enter A Number!');
-                document.getElementById('st').value = '';
+      <p> &reg; 2021 Marilyn Flowers | mflowers1@hawk.iit.edu </p>
+      <script> 
+         // 3
+         function totalMyNumber(){
+             console.log('Calculator works!');
+             let myNumber = document.getElementById('st').value.trim();
+             let myNumber1 = document.getElementById('tr').value.trim();
+          
              
-            } else {
-              document.getElementById('t').value = myNumber * myNumber;
-            }
-        }
-   
-        document.getElementById('calc').addEventListener('click', totalMyNumber);
-        document.getElementById('clearBtn').addEventListener('click', function(){
-            document.getElementById('st').value = '';
-                document.getElementById('t').value = '';
-        });
-    
-    
- 
-</script>
-</body>
+             console.log(myNumber);
+         
+             if (myNumber === '' || isNaN(Number(myNumber))) {
+                 alert('You Must Enter A Number!');
+                 document.getElementById('st').value = '';
+              
+             } else {
+               document.getElementById('t').value = myNumber * myNumber;
+             }
+         }
+         
+         document.getElementById('calc').addEventListener('click', totalMyNumber);
+         document.getElementById('clearBtn').addEventListener('click', function(){
+             document.getElementById('st').value = '';
+                 document.getElementById('t').value = '';
+         });
+         
+         
+         
+      </script>
+   </body>
  
