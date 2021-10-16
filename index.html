@@ -23,30 +23,30 @@
  
  <form id="form">
   
-    <label>Subtotal: </label>
-        <input type="text" />
+    <label> Subtotal: </label>
+        <input id="st" type="text"/>
 
       <div>
        
         <label>Tax Rate: </label>
-        <input type="text" />
+        <input id="tr" type="text" />
      
       <div>
        
         <label>Sales Tax: </label>
-        <input type="text" />
+        <input id="ts" type="text" />
        
       
       <div>
        
         <label>Total: </label>
-        <input type="text" />
+        <input id="t"type="text" />
        
       <div>
        
    <button>Calculate</button>     
-  <button type="reset">Clear</button>
-  <button onclick="myFunction()">Reset</button>
+   <button id ="clearBtn"> Clear</button>
+ 
   
                                       
 </form>
@@ -56,17 +56,12 @@
   <p> &reg; 2021 Marilyn Flowers | mflowers1@hawk.iit.edu </p>
  
 <script>
- function logReset(event) {
-  log.textContent = `Form Cleared`;
-}
-const form = document.getElementById('form');
-const log = document.getElementById('log');
-form.addEventListener('reset', logReset);
- 
- function myFunction() {
- 
-}
- 
+document.getElementbyId('clearBtn').addEventListener('click', function(){
+ document.getElementById('st').value = '';
+ document.getElementById('tr').value = '';
+ document.getElementById('ts').value = '';
+ document.getElementById('t').value = '';
+});
 </script>
 </body>
  
