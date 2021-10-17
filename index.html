@@ -55,7 +55,7 @@
                  document.getElementById('st').value = '';
               
              } else {
-               document.getElementById('t').value = (myNumber + myNumber * (myNumber1/100));
+               document.getElementById('t').value = ((myNumber + myNumber * (myNumber1/100)));
                document.getElementById('ts').value = myNumber1;
                 
              }
@@ -64,6 +64,7 @@
         document.getElementById('calc').addEventListener('click', totalMyNumber);
          document.getElementById('clearBtn').addEventListener('click', function(){
              document.getElementById('st').value = '';
+             document.getElementById('t').value = '';
          });
          
          
