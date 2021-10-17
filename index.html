@@ -33,7 +33,7 @@
          <label>Total: </label>
          <input id="t"type="text" disabled/>
          <div>
-            <button id="calc" onsubmit="return false" >Calculate</button>     
+            <button id="calc">Calculate</button>     
             <button id ="clearBtn">Clear</button>
       </form>
       <p id="log"></p>
@@ -64,7 +64,6 @@
         document.getElementById('calc').addEventListener('click', totalMyNumber);
          document.getElementById('clearBtn').addEventListener('click', function(){
              document.getElementById('st').value = '';
-                 document.getElementById('t').value = '';
          });
          
          
